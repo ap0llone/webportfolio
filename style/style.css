@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #101010;
+}
+:root{
+    --background-color: #191919;
+    --text-color: #fff;
+    --title-color: #fff;
+    --main-color: #ff4d05;
+	--second-bg-color: #202020;
+	--bottom-color: #555;
+	--second-color: #ccc;
+	--big-font: 5rem;
+	--h2-font: 3rem;
+	--p-font: 1.1rem;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 3px;
+}
+nav{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    padding: 12px 0;
+}
+nav.sticky{
+    background: var(--bg-color);
+    border-bottom: 1px solid #ffffff1a;
+    padding: 12px 15%;
+}
+.logo{
+    width: 80px;
+    margin-left: 120px;
+    font-size: 40px;
+    font-family: Andale Mono, monospace;
+    position: fixed;
+    margin-top: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul{
+    width: 100%;
+    text-align: right;
+    list-style: none;
+    margin-right: 50px;
+    position: fixed;
+    margin-top: 50px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 2px;
+    padding: 7px 13px;
+    font-weight: 400;
+    font-family: Andale Mono, monospace;
+    color: #fff;
+    transition: all .50s;
+}
+nav ul li a:hover{
+    color: var(--main-color);
+}
+.active{
+    background-color: #ff4d05;
+    border-radius: 30px;
+}
+.active:hover{
+    color: #fff;
+}
+span{
+    color: var(--main-color);
+}
+.home{
+	height: 100vh;
+	width: 100%;
+    background-image: url(images/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.slide{
+	margin-bottom: 20px;
+}
+.one{
+	display: inline-block;
+	margin-right: 15px;
+	height: 32px;
+	padding: 0 5px;
+	line-height: 32px;
+	font-size: 20px;
+	font-weight: 500;
+	border-radius: 5px;
+	background: var(--main-color);
+	color: var(--text-color);
+    margin-left: 20px;
+}
+.two{
+	display: inline-block;
+	color: var(--second-color);
+	font-size: 20px;
+	font-weight: 500;
+}
+.home-text h3{
+	color: var(--text-color);
+	margin: 0 0 35px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.1;
+    margin-left: 50px;
+    font-family:Bradley Hand, cursive ;
+
+}
+.home-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 1.8;
+	margin-bottom: 40px;
+    margin-left: 50px;
+    font-family: Snell Roundhand, cursive;
+}
+.button{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.btn{
+	display: inline-block;
+	padding: 12px 56px;
+	background: var(--main-color);
+	border-radius: 50px;
+	color: var(--text-color);
+	font-size: 1rem;
+	letter-spacing: 1px;
+	font-weight: 600;
+	transition: all .45s ease;
+    margin-left: 50px;
+    text-decoration: none;
+    font-family:Bradley Hand, cursive ;
+}
+.button a{
+    text-decoration: none;
+    font-family: Bradley Hand, cursive;
+}
+.btn:hover{
+	transform: scale(0.9);
+}
+.btn2{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--text-color);
+	margin-left: 35px;
+}
+.btn2 span i{
+	height: 55px;
+	width: 55px;
+	background: var(--main-color);
+	color: var(--text-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 35px;
+	border-radius: 50%;
+	margin-right: 15px;
+	transition: all .45s ease;
+}
+.btn2 span i:hover{
+	transform: scale(1.1) translateY(5px);
+}
+
+header.sticky{
+	background: var(--bg-color);
+	border-bottom: 1px solid #ffffff1a;
+	padding: 12px 15%;
+}
+.small-title{
+    color: var(--title-color);
+    font-size: 13px;
+    font-weight: 100;
+    margin-left: 70px;
+    font-family: DejaVu Sans Mono, monospace;
+}
+.about{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 1.5rem;
+    background-color: var(--second-bg-color);
+}
+.about-img img{
+	max-width: 500px;
+	height: auto;
+	width: 100%;
+	border-radius: 20px;
+    margin-left: 50px;
+}
+.about-text h2{
+    font-size: 70px;
+	line-height: 1;
+    color: #fff;
+    font-family: Andale Mono, monospace;
+}
+.about-text h4{
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--text-color);
+	line-height: 1.7;
+	margin: 15px 0 30px;
+    font-family: American Typewriter, serif;
+}
+.about-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 1.8;
+	margin-bottom: 4rem;
+    font-family: Snell Roundhand, cursive;
+    margin-right: 100px;
+}
+.container{
+    background-color: #101010;
+ }
+ .title h2{
+     color: #efefef;
+     font-size: 75px;
+     width: 1130px;
+     margin: 30px auto;
+     text-align: center;
+     font-family: Andale Mono, monospace;
+ }
+ .box {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 400px;
+ }
+ .card{
+     height: 365px;
+     width: 535px;
+     padding: 20px 35px;
+     background: #191919;
+     border-radius: 20px;
+     margin: 15px;
+     /* position: relative; */
+     overflow: hidden;
+     text-align: center;
+ }
+ .card:hover {
+     background: color #333;
+ }
+ .card i{
+     font-size: 50px;
+     display: block;
+     text-align: center;
+     margin: 25px 0px;
+     color: #ff4d05;
+ }
+ h5{
+     color: white;
+     font-size: 23px;
+     margin-bottom: 15px;
+ }
+ .pra p{
+     color: #efefef;
+     font-size: 16px;
+     line-height: 27px;
+     margin-bottom: 50px;
+     font-family: Bradley Hand, cursive;
+ }
+ .button-card{
+     color: #efefef;
+     border-radius: 2px;
+     border: none;
+     background: #ff4d05;
+     border: 2px solid #ff4d05;
+     padding: 10px 40px;
+     padding: 10px 60px;
+     font-weight: 400;
+     transition: .4s;
+ }
+ .button-card:hover{
+     cursor: pointer;
+     background-color: transparent;
+     border: 2px solid #ff4d05;
+ }
+.card a{
+    text-decoration: none;
+    font-family: Bradley Hand, cursive;
+}
+.portfolio{
+    background-color: #202020;
+    width: 100%;
+    height: 1300px;
+}
+.portfolio h5{
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    font-family:OCR A Std, monospace;
+    color: var(--second-color);
+}
+.portfolio h2{
+    text-align: center;
+    color: #fff;
+    font-family:Andale Mono, monospace;
+    font-size: 65px;
+}
+.img1{
+    width: 600px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.img2{
+    width: 600px;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+.img3{
+    width: 600px;
+    margin-left: 30px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.img4{
+    width: 600px;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+.img5{
+    width: 600px;
+    margin-left: 30px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.img6{
+    width: 600px;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+.portfolio img:hover{
+    background-color: #ff4d05;
+}
+.contact-title{
+    margin-top: 150px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contact-title h1{
+    font-size: 60px;
+    line-height: 0px;
+    margin-left: 20px;
+    font-family:Andale Mono, monospace;
+}
+form{
+    margin-top: 5px;
+    /* transition: all 4s ease-in-out; */
+    margin-top: 120px;
+}
+.form-control{
+    width: 600px;
+    background: #333;
+    border: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    display: flex;
+    margin: 0 auto;
+}
+input{
+    height: 55px;
+}
+button{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #ff4d05;
+    color: #fff;
+    padding: 10px 100px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: Bradley Hand, cursive;
+    margin-left: 560px;
+    margin-bottom: 100px;
+}
+button:hover{
+  transform: scale(1.1);
+}
+.bottom{
+    width: 100%;
+    height: 45px;
+    background-color: #000;
+    /* border: 2px solid red; */
+}
+.bottom p{
+    color: var(--bottom-color);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+@media screen and (max-width:768px) {
+    .logo{
+        display: none;
+    }
+    nav{
+        opacity: .8;
+   
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 10px;
+        border-radius: 2px;
+        padding: 3px 10px;
+        text-transform: uppercase;
+        position: relative;
+        margin-top: 10px;
+    }
+    nav ul li{
+        list-style: none;
+        /* display: block; */
+        display: inline-fl;
+        margin: 0 5px; 
+        padding: 10px;
+    }
+    .home-text h3{
+        font-size: 25px;
+    }
+    .home-text p{
+        font-size: 15px;
+    }
+    .button a{
+        font-size: 10px;
+        padding: 10px 30px; 
+    }
+    .about-img{
+        width: 300px;
+
+    }
+    .about-text h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    .about{
+      
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1.5rem;
+        background-color: var(--second-bg-color);
+    }
+    .about-img img{
+        height: 200px;
+        width: 200px;
+      
+    }
+    .about-text h2{
+        font-size: 70px;
+        display: inline-block;
+        line-height: 1;
+        color: #fff;
+        font-family: Andale Mono, monospace;
+    }
+    .about-text h4{
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--text-color);
+        line-height: 1.7;
+        margin: 15px 0 30px;
+        font-family: American Typewriter, serif;
+    }
+    .about-text p{
+        color: var(--second-color);
+        font-size: 20px;
+        line-height: 1.8;
+        margin-bottom: 4rem;
+        font-family: Snell Roundhand, cursive;
+        margin-right: 100px;
+    }
+    .container{
+        background-color: #101010;
+     }
+     .title h2{
+        font-size: 50px;
+        text-align: left;
+        margin-left: 140px;
+     }
+     .card{
+        width: 300%;
+		height: auto;
+		padding: 90px 2%;
+     }
+     .button-card {
+        font-size: 10px;
+        padding: 10px 10px;
+     }
+     
+    
+}
